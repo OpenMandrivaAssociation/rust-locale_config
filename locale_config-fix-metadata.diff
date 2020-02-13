@@ -1,0 +1,24 @@
+--- locale_config-0.2.2/Cargo.toml	2017-04-21T22:27:33+00:00
++++ locale_config-0.2.2/Cargo.toml	2019-07-01T18:55:28.923937+00:00
+@@ -15,18 +15,15 @@
+ readme = "README.md"
+ keywords = ["i18n"]
+ categories = ["os"]
++exclude = ["/ci/*", "/.travis.yml", "/appveyor.yml"]
+ 
+ [badges]
+ travis-ci = { repository = "rust-locale/locale_config" }
+ appveyor = { repository = "rust-locale/locale_config" }
+ 
+ [dependencies]
+-lazy_static = "0.2"
+-regex = "0.2"
+-
+-[target.'cfg(windows)'.dependencies]
+-winapi = "0.2.8"
+-kernel32-sys = "0.2.2"
++lazy_static = "1"
++regex = "1"
+ 
+ [package.metadata.release]
+ upload-doc = true
